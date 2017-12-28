@@ -132,15 +132,9 @@ class Player {
     
     /// Handles the audio tap
     private func onTap(_ buffer: AVAudioPCMBuffer, _ time: AVAudioTime) {
-        guard let file = currentFile else {
-            return
-        }
-        
-        guard let nodeTime = playerNode.lastRenderTime else {
-            return
-        }
-        
-        guard let playerTime = playerNode.playerTime(forNodeTime: nodeTime) else {
+        guard let file = currentFile,
+              let nodeTime = playerNode.lastRenderTime,
+              let playerTime = playerNode.playerTime(forNodeTime: nodeTime) else {
             return
         }
         
