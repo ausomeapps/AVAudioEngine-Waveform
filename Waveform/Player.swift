@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 import os.log
 
+/// High level audio player class
 class Player {
     
     /// Default properties for the tap
