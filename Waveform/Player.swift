@@ -66,11 +66,11 @@ class Player {
     init() {
         /// Make connections
         engine.attach(playerNode)
-        engine.connect(playerNode, to: engine.mainMixerNode, format: nil)
+        engine.connect(playerNode, to: engine.mainMixerNode, format: TapProperties.default.format)
         engine.prepare()
         
         /// Install tap
-        engine.mainMixerNode.installTap(onBus: 0, bufferSize: TapProperties.default.bufferSize, format: TapProperties.default.format, block: onTap(_:_:))
+        playerNode.installTap(onBus: 0, bufferSize: TapProperties.default.bufferSize, format: TapProperties.default.format, block: onTap(_:_:))
     }
     
     // MARK: Playback
