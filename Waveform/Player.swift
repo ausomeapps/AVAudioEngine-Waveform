@@ -37,8 +37,6 @@ class Player {
     /// The node responsible for playing the audio file
     private let playerNode = AVAudioPlayerNode()
     
-    private var lastCurrentTime: AVAudioTime?
-    
     /// The currently playing audio file
     private var currentFile: AVAudioFile? {
         didSet {
