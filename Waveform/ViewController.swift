@@ -16,6 +16,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playButton: UIButton!
     
+    @IBOutlet weak var plot: EZAudioPlot! {
+        willSet {
+            newValue.plotType = .rolling
+            newValue.color = UIColor.blue
+            newValue.shouldMirror = true
+            newValue.shouldFill = true
+        }
+    }
+    
     override func viewDidLoad() {
         os_log("%@ - %d", log: ViewController.logger, type: .default, #function, #line)
         
@@ -30,6 +39,8 @@ class ViewController: UIViewController {
         
         /// Start player
         let player = Player.shared
+        player.delegate = self
+        
         if let url = Bundle.main.url(forResource: "eve", withExtension: "mp3") {
             player.loadFile(with: url)
         } else {
@@ -39,24 +50,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func play(_ sender: Any) {
-        os_log("%@ - %d [isPlaying: %@]", log: ViewController.logger, type: .default, #function, #line, String(describing: Player.shared.isPlaying))
-        
-        
         let player = Player.shared
-        
-        if player.isPlaying {
-            
-            player.pause()
-            
-            playButton.setTitle("Play", for: .normal)
-            
-        } else {
-            
-            player.play()
-            
-            playButton.setTitle("Pause", for: .normal)
-            
-        }
+        let isPlaying = player.isPlaying
+        os_log("%@ - %d [isPlaying: %@]", log: ViewController.logger, type: .default, #function, #line, String(describing: isPlaying))
+
+        /// Toggle playback state
+        player.isPlaying ? player.pause() : player.play()
     }
     
 }

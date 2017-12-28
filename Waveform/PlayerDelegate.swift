@@ -14,8 +14,6 @@ protocol PlayerDelegate: class {
     
     func player(_ player: Player, didChangePlaybackState isPlaying: Bool)
     
-    func player(_ player: Player, didPlayFile file: AVAudioFile, atTime time: AVAudioTime)
-    
-    func player(_ player: Player, didPlayFile file: AVAudioFile, withBuffer buffer: AVAudioPCMBuffer)
+    func player(_ player: Player, didPlayFile file: AVAudioFile, atTime time: TimeInterval, withBuffer buffer: AVAudioPCMBuffer)
     
 }
