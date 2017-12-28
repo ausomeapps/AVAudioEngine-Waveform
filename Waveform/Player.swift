@@ -128,7 +128,7 @@ class Player {
         }
     }
     
-    // Tap
+    // MARK: Tap
     
     /// Handles the audio tap
     private func onTap(_ buffer: AVAudioPCMBuffer, _ time: AVAudioTime) {
