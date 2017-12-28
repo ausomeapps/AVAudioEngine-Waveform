@@ -12,7 +12,6 @@
 		66F127AF1FF541770062056B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F127AD1FF541770062056B /* Main.storyboard */; };
 		66F127B11FF541770062056B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F127B01FF541770062056B /* Assets.xcassets */; };
 		66F127B41FF541770062056B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F127B21FF541770062056B /* LaunchScreen.storyboard */; };
-		66F127BC1FF541890062056B /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F127BB1FF541890062056B /* Waveform.swift */; };
 		66F127BE1FF541930062056B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F127BD1FF541930062056B /* Player.swift */; };
 		66F127C91FF545140062056B /* eve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66F127C81FF545140062056B /* eve.mp3 */; };
 		66F127CB1FF54A780062056B /* PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F127CA1FF54A780062056B /* PlayerDelegate.swift */; };
@@ -34,7 +33,6 @@
 		66F127B01FF541770062056B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F127B31FF541770062056B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F127B51FF541770062056B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66F127BB1FF541890062056B /* Waveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
 		66F127BD1FF541930062056B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		66F127C81FF545140062056B /* eve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eve.mp3; sourceTree = "<group>"; };
 		66F127CA1FF54A780062056B /* PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				66F127E31FF54F9A0062056B /* ViewController+PlayerDelegate.swift */,
 				66F127BD1FF541930062056B /* Player.swift */,
 				66F127CA1FF54A780062056B /* PlayerDelegate.swift */,
-				66F127BB1FF541890062056B /* Waveform.swift */,
 				66F127AD1FF541770062056B /* Main.storyboard */,
 				66F127B01FF541770062056B /* Assets.xcassets */,
 				66F127B21FF541770062056B /* LaunchScreen.storyboard */,
@@ -209,7 +206,6 @@
 				66F127AA1FF541770062056B /* AppDelegate.swift in Sources */,
 				66F127CB1FF54A780062056B /* PlayerDelegate.swift in Sources */,
 				66F127E01FF54D3C0062056B /* EZAudioDisplayLink.m in Sources */,
-				66F127BC1FF541890062056B /* Waveform.swift in Sources */,
 				66F127E41FF54F9A0062056B /* ViewController+PlayerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
